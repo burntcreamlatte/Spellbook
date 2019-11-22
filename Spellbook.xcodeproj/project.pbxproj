@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		AB99A8252387330300C07AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99A8242387330300C07AD2 /* AppDelegate.swift */; };
 		AB99A8272387330300C07AD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99A8262387330300C07AD2 /* SceneDelegate.swift */; };
-		AB99A8292387330300C07AD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99A8282387330300C07AD2 /* ViewController.swift */; };
 		AB99A82C2387330300C07AD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99A82A2387330300C07AD2 /* Main.storyboard */; };
 		AB99A82E2387330400C07AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB99A82D2387330400C07AD2 /* Assets.xcassets */; };
 		AB99A8312387330400C07AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99A82F2387330400C07AD2 /* LaunchScreen.storyboard */; };
+		AB99A83E238733CC00C07AD2 /* SpellListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99A83D238733CC00C07AD2 /* SpellListTableViewController.swift */; };
+		AB99A8412387340900C07AD2 /* SpellListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99A8402387340900C07AD2 /* SpellListTableViewCell.swift */; };
+		AB99A8432387345700C07AD2 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99A8422387345700C07AD2 /* Spells.swift */; };
+		AB99A8452387373700C07AD2 /* SpellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99A8442387373700C07AD2 /* SpellsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB99A8212387330300C07AD2 /* Spellbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spellbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB99A8242387330300C07AD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB99A8262387330300C07AD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB99A8282387330300C07AD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB99A82B2387330300C07AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB99A82D2387330400C07AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB99A8302387330400C07AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB99A8322387330400C07AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB99A83D238733CC00C07AD2 /* SpellListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListTableViewController.swift; sourceTree = "<group>"; };
+		AB99A8402387340900C07AD2 /* SpellListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListTableViewCell.swift; sourceTree = "<group>"; };
+		AB99A8422387345700C07AD2 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
+		AB99A8442387373700C07AD2 /* SpellsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		AB99A8232387330300C07AD2 /* Spellbook */ = {
 			isa = PBXGroup;
 			children = (
+				AB99A83A2387331E00C07AD2 /* Controllers */,
+				AB99A8392387331400C07AD2 /* Models */,
+				AB99A8382387330F00C07AD2 /* Resources */,
+				AB99A82A2387330300C07AD2 /* Main.storyboard */,
+			);
+			path = Spellbook;
+			sourceTree = "<group>";
+		};
+		AB99A8382387330F00C07AD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				AB99A8242387330300C07AD2 /* AppDelegate.swift */,
 				AB99A8262387330300C07AD2 /* SceneDelegate.swift */,
-				AB99A8282387330300C07AD2 /* ViewController.swift */,
-				AB99A82A2387330300C07AD2 /* Main.storyboard */,
 				AB99A82D2387330400C07AD2 /* Assets.xcassets */,
 				AB99A82F2387330400C07AD2 /* LaunchScreen.storyboard */,
 				AB99A8322387330400C07AD2 /* Info.plist */,
 			);
-			path = Spellbook;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB99A8392387331400C07AD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB99A8422387345700C07AD2 /* Spells.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB99A83A2387331E00C07AD2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB99A83C2387333E00C07AD2 /* Model Controllers */,
+				AB99A83B2387332300C07AD2 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB99A83B2387332300C07AD2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB99A83F238733F200C07AD2 /* Custom Views */,
+				AB99A83D238733CC00C07AD2 /* SpellListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AB99A83C2387333E00C07AD2 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB99A8442387373700C07AD2 /* SpellsController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		AB99A83F238733F200C07AD2 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB99A8402387340900C07AD2 /* SpellListTableViewCell.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB99A8292387330300C07AD2 /* ViewController.swift in Sources */,
+				AB99A8432387345700C07AD2 /* Spells.swift in Sources */,
 				AB99A8252387330300C07AD2 /* AppDelegate.swift in Sources */,
+				AB99A8452387373700C07AD2 /* SpellsController.swift in Sources */,
 				AB99A8272387330300C07AD2 /* SceneDelegate.swift in Sources */,
+				AB99A8412387340900C07AD2 /* SpellListTableViewCell.swift in Sources */,
+				AB99A83E238733CC00C07AD2 /* SpellListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = Spellbook/Info.plist;
+				INFOPLIST_FILE = Spellbook/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = Spellbook/Info.plist;
+				INFOPLIST_FILE = Spellbook/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
